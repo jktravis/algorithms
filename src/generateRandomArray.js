@@ -1,9 +1,7 @@
 import shuffle from 'lodash/fp/shuffle';
+import range from 'lodash/fp/range';
+
 export function generateRandomArray(numEl) {
-  const arr = [];
-  for (let i = 0; i < numEl; i++) {
-    arr.push(i);
-  }
-  return shuffle(arr);
+  return shuffle(range(1, numEl, 1));
 }
 
