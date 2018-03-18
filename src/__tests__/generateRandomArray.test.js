@@ -1,4 +1,4 @@
-import { generateRandomArray } from './generateRandomArray';
+import { generateRandomArray } from '../generateRandomArray';
 
 describe('generateRandomArray', () => {
   it('should return an array of size 5', () => {

@@ -1,4 +1,4 @@
-import { mergeSort } from './mergeSort';
+import { mergeSort } from '../mergeSort';
 
 describe('mergeSort', () => {
   it('should have a mergeSort function', () => {
