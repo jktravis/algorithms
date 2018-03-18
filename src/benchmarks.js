@@ -1,6 +1,7 @@
 import Benchmark from 'benchmark';
 import { quickSort } from './quickSort';
 import { mergeSort } from './mergeSort';
+import { bubbleSort } from './bubbleSort';
 import { generateRandomArray } from './generateRandomArray';
 
 const suite = new Benchmark.Suite;
@@ -15,6 +16,9 @@ suite.add('QuickSort', () => {
 })
   .add('MergeSort', () => {
     mergeSort(unsorted);
+  })
+  .add('BubbleSort', () => {
+    bubbleSort(unsorted);
   })
   // add listeners
   .on('cycle', function(event) {
