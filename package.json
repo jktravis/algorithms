@@ -1,0 +1,29 @@
+{
+  "name": "Sorting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "benchmarks.js",
+  "scripts": {
+    "test": "jest",
+    "prebuild": "npm run test",
+    "build": "webpack --mode development --entry ./src/benchmarks --output-filename benchmarks.js",
+    "prestart": "npm run build",
+    "start": "node dist/benchmarks.js"
+  },
+  "keywords": [],
+  "author": "Joshua Travis <joshua.travis@gmail.com> (http://jktravis.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "benchmark": "^2.1.4",
+    "jest": "^22.4.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5"
+  }
+}
